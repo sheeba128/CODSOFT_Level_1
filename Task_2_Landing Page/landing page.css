@@ -1,0 +1,114 @@
+/* General reset to avoid unwanted margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color:lightyellow;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcccc; /* Light red background */
+  padding: 20px;
+}
+
+/* Logo section */
+.logo {
+  font-size: 65px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex; /* Arrange list items in a row */
+}
+
+nav ul li {
+  margin-left: 20px; /* Add space between list items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 60px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+/* Optional hover effect */
+nav ul li a:hover {
+  color: #ff4d4d; /* Darker red on hover */
+}
+
+.hero {
+  background-image: url('pexels-prismattco-2372944.jpg'); /* Path to your background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: white; /* Set text color for visibility */
+  padding: 100px 20px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+  width: 100%; /* Full width of the parent container */
+  height: 100vh; /* Full viewport height */
+  position: relative; /* Position relative for overlay */
+}
+
+.hero::before {
+  content: '';
+  position: absolute; /* Position it behind the text */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1; /* Behind text */
+}
+
+.hero h1, .hero p, .hero button {
+  position: relative; /* Ensure text is above overlay */
+  z-index: 2; /* Above overlay */
+}
+
+h1 {
+  font-size: 3em; /* Adjust font size for the heading */
+  margin-bottom: 20px; /* Add space below heading */
+  font-size:200px;
+}
+
+h1 strong {
+  color: #ff5733; /* Customize color for the strong text */
+  font-weight: bold; /* Ensure it’s bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+  font-size:200px;
+}
+
+.hero p {
+  font-size:100px; /* Adjust font size for the paragraph */
+  margin: 0 auto 20px; /* Center the paragraph */
+}
+
+.get-started-button {
+  display: inline-block; /* Makes the link behave like a block element */
+  background-color: #ff5733; /* Background color of the button */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding for spacing */
+  font-size: 100px; /* Font size */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.get-started-button:hover {
+  background-color: #c70039; /* Change color on hover */
+}
+

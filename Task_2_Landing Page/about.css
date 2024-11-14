@@ -1,0 +1,182 @@
+#about {
+  background-image: url("adorable.jpg");
+  background-size: cover; /* Makes the image cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 290vh; /* Set a specific height for the section (adjust as needed) */
+  width: 100%; /* Make the section full width */
+  padding: 50px; /* Add padding for spacing */
+  text-align: center; /* Center align text */
+  color: white;
+  position: relative;
+}
+
+#about::before {
+  content: '';
+  position: absolute; /* Position the overlay absolutely */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Place it above the background but below the text */
+}
+
+#about h2, #about p {
+  position: relative; /* Position text above the overlay */
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+/* Styles for the unordered list */
+#about ul {
+  list-style-type:disc; /* Remove default bullets */
+  padding: 0; /* Remove default padding */
+  margin: 20px auto; /* Center the list and add vertical margin */
+  max-width: 800px; /* Set a max width for the list */
+  text-align: left; /* Align text to the left */
+}
+
+/* Styles for each list item */
+#about li {
+  font-size: 65px; /* Set font size for list items */
+  color: hsl(0, 0%, 0%); /* Gold color for list items */
+  padding: 10px 0; /* Vertical padding for spacing */
+  position: relative; 
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min-width for larger images */
+  gap: 30px; /* Increased gap for larger images */
+  padding: 20px;
+  justify-items: center;
+  text-align: center;
+}
+
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 1000px; /* Adjust size as needed */
+  margin: 10px;
+  height:900px;
+}
+
+.team-member h4 {
+  font-size: 65px;
+  
+  margin-top: 15px;
+  color:white;
+}
+
+
+
+#about h2{
+  font-size:100px;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styles for the Our History section */
+#about h3 {
+  font-size: 65px; /* Set font size for the heading */
+  color: #FFD700; /* Gold color for the heading */
+  margin-top: 30px; /* Margin above the heading */
+  margin-bottom: 10px; /* Margin below the heading */
+  text-align: center; /* Center align the heading */
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#about p {
+  font-size: 65px; /* Set font size for the paragraph */
+  color: white; /* Text color for better contrast */
+  line-height: 1.6; /* Improve line height for readability */
+  margin: 0 auto; /* Center align paragraph */
+  text-align: center; /* Center align text */
+  padding: 0 20px; /* Add horizontal padding */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+
+
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.portfolio-gallery img {
+  width: 1000px; /* Adjust size as needed */
+  margin: 10px;
+  height:900px;
+}
+
+#contact {
+  background-color: #cecedb;
+  padding: 40px;
+  text-align: center;
+  font-size:65px;
+  color:black;
+}
+
+#contact h3 {
+  font-size: 65px;
+  color: #333;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 600px;
+  
+}
+
+#contact-form input, 
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size:65px;
+}
+
+#contact-form button {
+  padding: 20px 50px; /* Increase padding to make the button bigger */
+  font-size: 65px; /* Increase the font size */
+  background-color:orange;
+  color: #161414;
+  border: none;
+  border-radius: 8px; /* Slightly increase the border radius */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto; /* You can also set width if you want a fixed size, e.g., 200px */
+}
+
+#contact p{
+  font-size:65px;
+  color:black;
+}
+
+#contact-form button:hover {
+  background-color: #555;
+}
+
+.contact-info {
+  margin-top: 30px;
+  font-size: 65px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
